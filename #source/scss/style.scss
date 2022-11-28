@@ -1,0 +1,334 @@
+@import "_nullStyle";
+
+[class*="__container"] {
+   max-width: 1430px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.wrapper {
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   position: relative;
+   background: url('../../img/bg.png');
+   background-color: rgb(4, 7, 24);
+}
+
+.video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1;
+
+   margin: -10% 0 0 0;
+
+   &__item {
+      aspect-ratio: 3 / 2;
+
+      video {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+      }
+      .blur {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: radial-gradient(
+            51.93% 81.64% at 49.17% 44.44%,
+            rgba(0, 0, 0, 0) 39.06%,
+            rgba(6, 4, 0, 0.22) 57.81%,
+
+            rgba(12, 0, 21, 0.58) 88.54%
+         );
+         backdrop-filter: blur(1px);
+      }
+   }
+}
+
+.header {
+   width: 100%;
+   z-index: 2;
+}
+
+.menu {
+   width: 100%;
+
+   &__list {
+      padding: 36px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__item {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 130%;
+
+      text-transform: uppercase;
+
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin: 0 2%;
+   }
+
+   &__logo {
+      margin: 0 9%;
+   }
+}
+
+.main {
+   z-index: 2;
+   flex: 1 1 auto;
+   &__content {
+      margin: 12% 0 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+   }
+
+   &__welcome {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 130%;
+      text-transform: uppercase;
+
+      color: #939393;
+   }
+
+   &__name {
+      font-weight: 900;
+      font-size: 150px;
+      text-transform: uppercase;
+   }
+
+   &__info {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140%;
+      max-width: 240px;
+      margin: 35px 0 0 0;
+   }
+
+   &__discord {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 130%;
+
+      max-width: 275px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px 32px;
+      margin: 40px 0 0 0;
+      gap: 10px;
+
+      background: #5865f2;
+      box-shadow: 0px 0px 30px rgba(88, 101, 242, 0.3);
+      border-radius: 100px;
+   }
+
+   &__about {
+      display: flex;
+      justify-content: space-between;
+      margin: 370px 0 0 0;
+   }
+
+   &__about-item {
+      flex: 0 1 610px;
+
+      &:last-child {
+         margin-right: 82px;
+      }
+   }
+
+   &__about-name {
+      font-weight: 600;
+      font-size: 30px;
+   }
+
+   &__about-line {
+      width: 50px;
+      height: 3px;
+      background: linear-gradient(2deg, rgb(137, 81, 255) 0px, rgb(255, 138, 229) 33%);
+      border-radius: 3px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      margin: 21px 0;
+   }
+
+   &__about-info {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 130%;
+   }
+
+   &__about-logo {
+      margin: 10px 0 0 0;
+   }
+
+   &__titland {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 0;
+
+      margin: 200px 0 0 0;
+   }
+
+   &__titiland-content {
+      flex: 0 1 550px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      margin: 0 140px 0 0;
+   }
+
+   &__titiland-name {
+      font-weight: 800;
+      font-size: 60px;
+      line-height: 73px;
+
+      text-transform: uppercase;
+
+      background: linear-gradient(277.65deg, #0571ff -48.26%, #e64dff 40.28%, #8a2fff 112.11%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+
+      text-shadow: 0px 0px 40px rgba(255, 41, 246, 0.4);
+   }
+
+   &__titiland-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140%;
+      margin: 30px 0 0 0;
+   }
+
+   &__titiland-more {
+      font-weight: 600;
+      font-size: 15px;
+
+      background: linear-gradient(277.37deg, #2d0073 -24.21%, #c843ff 131.33%);
+      box-shadow: 0px 0px 20px rgba(255, 41, 246, 0.2);
+      border-radius: 100px;
+
+      padding: 10px 32px;
+      margin: 60px 0 0 0;
+   }
+
+   .slaider {
+      flex: 0 1 510px;
+      min-width: 0;
+
+      .arr {
+         cursor: pointer;
+      }
+
+      &__arr-left {
+         img {
+            transform: rotate(180deg);
+         }
+      }
+
+      &__image {
+         position: relative;
+         .back {
+            position: absolute;
+            left: 64px;
+            top: 60px;
+            width: 74%;
+            z-index: -1;
+            height: 80%;
+            background: linear-gradient(359.28deg, rgba(216, 72, 255, 0.3) 6.14%, rgba(216, 72, 255, 0.048) 101.75%);
+            filter: blur(7.5px);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+         }
+      }
+
+      &__col-top {
+      }
+
+      &__photos {
+         display: flex;
+         align-items: center;
+         img {
+            display: block;
+            &._active {
+               display: block;
+            }
+         }
+      }
+
+      &__col-down {
+      }
+
+      &__arr-right {
+      }
+   }
+
+   .arr-prev,
+   .arr-next {
+      cursor: pointer;
+   }
+}
+
+.swiper {
+   max-width: 360px;
+}
+
+.footer {
+}
+
+.preloader {
+   width: 100%;
+   height: 100%;
+   z-index: 3;
+   overflow: hidden;
+
+   &__procents {
+      position: absolute;
+      left: 50%;
+      top: 90%;
+      transform: translate(-50%, -50%);
+
+      font-weight: 800;
+      font-size: 40px;
+      text-transform: uppercase;
+      background: linear-gradient(277.65deg, #0571ff -48.26%, #e64dff 40.28%, #8a2fff 112.11%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+
+      text-shadow: 0px 0px 40px rgba(255, 41, 246, 0.4);
+   }
+
+   &__img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: -10% 0 0 0;
+      width: 100%;
+      img {
+         position: absolute;
+         width: 100%;
+      }
+   }
+}
+
+.preloader--hide {
+   display: none;
+}
+
+body.preload {
+   height: 100vh;
+   overflow-y: hidden;
+}
