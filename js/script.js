@@ -1,4 +1,4 @@
-body = document.querySelector('body')
+body = document.body
 procents = document.querySelector('.procents')
 preload = document.querySelector('.preloader')
 
@@ -13,7 +13,7 @@ allCount = imagesCount + videosCount;
 percent = 100 / allCount; //количество % на одну картинку
 
 document.addEventListener('DOMContentLoaded', () => {
-    const mediaFiles = document.querySelectorAll('img, video');
+    const mediaFiles = document.querySelectorAll('img');
     
 
     Array.from(mediaFiles).forEach((file, index) => {
@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
             i++;
 
             procents.innerHTML = ((i * 100) / mediaFiles.length).toFixed();
-            console.log(i, mediaFiles.length);
-            if (i == 1) {
-                preload.classList.add('preloader--hide')
+            console.log(body);
+            if (i === 1) {
                 body.classList.remove('preload')
+                preload.classList.add('preloader--hide')
                 procents.innerHTML = 100
             }
         }
