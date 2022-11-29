@@ -1,0 +1,418 @@
+.roadmap {
+    margin: 15% 0 0 0;
+    height: 1500px; // Убрать
+    display: flex;
+    justify-content: end;
+}
+.rm {
+    max-width: 930px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &__line {
+        position: absolute;
+        width: calc(100% - 256px);
+        max-width: 690px;
+        height: 1px;
+        left: 0;
+        top: 0;
+
+        border: 1px solid #d146ff;
+        background: #d146ff;
+        box-shadow: 0px 0px 20px #d848ff;
+    }
+
+    &__elipse {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 256px;
+        width: 100%;
+        max-width: 128px;
+        border-radius: 0 150px 150px 0;
+        border: 3px solid #d146ff;
+        box-shadow: inset -30px 0px 40px -35px #d848ff, 16px 0px 28px -25px #d848ff;
+        border-left: none;
+    }
+
+    &__arr {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 8.5px 15px 8.5px 0;
+        border-color: transparent #d848ff transparent transparent;
+
+        position: absolute;
+        top: 1257px;
+        left: -10px;
+        box-shadow: 0 0 50px 0px #d848ff;
+    }
+}
+
+.line-1 {
+    max-width: 930px;
+    width: 100%;
+    left: -200%;
+}
+
+.line-2 {
+    max-width: 930px;
+    width: 100%;
+    left: calc(-200% + 930px);
+}
+.line-3 {
+    max-width: 930px;
+    width: calc(100% - 128px);
+    right: 128px;
+    left: auto;
+}
+.line-4 {
+    left: auto;
+    right: 128px;
+    top: 253px;
+}
+.elipse-2 {
+    right: auto;
+    left: 0;
+    top: 253px;
+    transform: rotate(180deg);
+}
+.line-5 {
+    left: 128px;
+    top: 506px;
+}
+.elipse-3 {
+    right: 0;
+    left: auto;
+    top: 506px;
+}
+.line-6 {
+    left: auto;
+    right: 128px;
+    top: 759px;
+}
+.elipse-4 {
+    right: auto;
+    left: 0;
+    top: 759px;
+    transform: rotate(180deg);
+}
+.line-7 {
+    left: 128px;
+    top: 1012px;
+}
+.elipse-5 {
+    right: 0;
+    left: auto;
+    top: 1012px;
+}
+.line-8 {
+    max-width: calc(100% - 128px);
+    width: 100%;
+    left: auto;
+    right: 128px;
+    top: 1265px;
+}
+
+.rm_point {
+    position: absolute;
+    transform: translate(-10%, -50%);
+    z-index: 2;
+
+    width: 24px;
+    height: 24px;
+
+    background: #fff;
+    border: 3px solid #d146ff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 24px #d848ff;
+}
+
+.p-big {
+    width: 40px;
+    height: 40px;
+}
+
+.p-inactive {
+    background: #010d22;
+}
+
+.p-text {
+    width: 200px;
+    transform: translate(-44%, 50%);
+    text-align: center;
+}
+
+.p-big .p-text {
+    transform: translate(-40%, -150%);
+}
+
+.p-title {
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 28px;
+
+    text-transform: uppercase;
+
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+
+    & span {
+        color: #ffffff;
+        margin-left: 7px;
+    }
+}
+
+.p-inactive .p-text .p-title span {
+    background: linear-gradient(277.65deg, #0571ff -48.26%, #e64dff 40.28%, #8a2fff 112.11%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.p-info {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 4px;
+}
+
+.point-2 {
+    left: 18%;
+}
+
+.point-3 {
+    left: 50%;
+}
+
+.point-4 {
+    left: auto;
+    right: 18%;
+    & .p-text {
+        transform: translate(-44%, 75%);
+        width: 150px;
+    }
+}
+
+.point-5 {
+    left: auto;
+    right: -10px;
+}
+
+.point-6 {
+    left: auto;
+    right: -10px;
+}
+
+.point-7 {
+    left: auto;
+    right: 17%;
+
+    & .p-text {
+        transform: translate(-45%, 150%);
+    }
+}
+
+.point-8 {
+    left: auto;
+    right: 328px;
+    right: 49%;
+}
+
+.point-9 .p-text {
+    width: 300px;
+    transform: translate(-45%, -150%);
+}
+
+.point-10 {
+    rotate: 180deg;
+    left: auto;
+    right: 16px;
+    bottom: 50px;
+}
+
+.point-11 {
+    rotate: 180deg;
+    left: auto;
+    right: 3px;
+    top: 45px;
+}
+
+.elipse-2 .p-text {
+    transform: translate(-120%, -25%);
+    width: 150px;
+}
+
+.point-12 {
+    & .p-text {
+        transform: translate(-39%, 75%);
+        width: 100px;
+    }
+}
+
+.point-13 {
+    left: 21%;
+    & .p-text {
+        transform: translate(-45%, 150%);
+    }
+}
+
+.point-14 {
+    left: 42%;
+}
+
+.point-15 {
+    left: auto;
+    right: -10px;
+}
+
+.elipse-3 .p-text {
+    transform: translate(-105%, -25%);
+    width: 100px;
+}
+
+.point-16 {
+    left: auto;
+    right: 9px;
+    top: 50px;
+}
+
+.point-17 {
+    left: auto;
+    right: -5px;
+    bottom: 50px;
+}
+
+.point-18 {
+    left: auto;
+    right: -10px;
+    & .p-text {
+        transform: translate(-46%, 150%);
+    }
+}
+
+.point-19 {
+    left: auto;
+    right: 25%;
+}
+
+.point-20 {
+    left: auto;
+    right: 55%;
+
+    & .p-text {
+        transform: translate(0%, 22px);
+    }
+}
+
+.point-19,
+.point-20 {
+    & .p-text {
+        width: 100px;
+        transform: translate(-40%, 75%);
+    }
+}
+
+.point-22 {
+    rotate: 180deg;
+    left: auto;
+    right: -13px;
+    top: 45%;
+    transform: translate(0, 0);
+
+    & .p-text {
+        width: 100px;
+        transform: translate(-100%, -30%);
+    }
+}
+
+.point-23 {
+    left: 0;
+
+    & .p-text {
+        transform: translate(-44%, 150%);
+    }
+}
+
+.point-24 {
+    right: 25%;
+    & .p-text {
+        transform: translate(-44%, 75%);
+    }
+}
+
+.point-25 {
+    right: -10px;
+
+    & .p-text {
+        transform: translate(-41%, -135%);
+    }
+}
+
+.point-26 {
+    right: -16px;
+    bottom: 45%;
+    & .p-text {
+        width: 150px;
+        transform: translate(-109%, -41%);
+    }
+}
+
+.point-27,
+.point-28,
+.point-29,
+.point-30 {
+    & .p-text {
+        width: 100px;
+        transform: translate(-40px, 28px);
+    }
+}
+
+.point-27 {
+    left: auto;
+    right: -10px;
+    & .p-text {
+        width: 120px;
+        transform: translate(-48px, 38px);
+    }
+}
+
+.point-28 {
+    left: auto;
+    right: 27%;
+}
+
+.point-29 {
+    left: auto;
+    right: 54%;
+}
+
+.point-30 {
+    left: 16%;
+    & .p-title {
+        position: absolute;
+        left: 23px;
+        top: -72px;
+        background: linear-gradient(277.65deg, #0571ff -48.26%, #e64dff 40.28%, #8a2fff 112.11%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
+
+.text-moon {
+    position: absolute;
+    top: -40px;
+    left: -57px;
+
+    display: inline;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 28px;
+
+    text-align: center;
+    text-transform: uppercase;
+}

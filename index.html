@@ -11,9 +11,9 @@
    <link rel="stylesheet" href="css/swiper.min.css">
 </head>
 
-<body class="preload">
-   <div class="preloader" id="preloader">
-      
+<body class="">
+   <div class="preloader--hide" id="preloader">
+
       <div class="preloader__img">
          <img src="img/preload.jpg" alt="Прелоуд">
          <!-- <img src="img/2.png" alt="Прелоуд">
@@ -24,83 +24,85 @@
          <span class="procents">0</span>%
       </span>
    </div>
-   <div class="wrapper">
-      <div class="video">
-         <div class="video__item">
-            <video loop autoplay muted preload="auto">
-               <source src="video/Earth.webm" type="video/webm">
-            </video>
-            <div class="blur"></div>
+   <header class="header">
+      <div class="header__container">
+         <div class="header__menu menu">
+            <ul class="menu__list">
+               <li class="menu__item">tokenomics</li>
+               <li class="menu__item">Roadmap</li>
+               <li class="menu__item">WHitePaper</li>
+               <li class="menu__item menu__logo"><img src="img/Logo.svg" alt="Лого"></li>
+               <li class="menu__item">Titiland</li>
+               <li class="menu__item">ZOOM LOUPE</li>
+               <li class="menu__item">miticoin</li>
+            </ul>
          </div>
       </div>
-      <header class="header">
-         <div class="header__container">
-            <div class="header__menu menu">
-               <ul class="menu__list">
-                  <li class="menu__item">О НАС</li>
-                  <li class="menu__item">Roadmap</li>
-                  <li class="menu__item">WHitePaper</li>
-                  <li class="menu__item menu__logo"><img src="img/Logo.png" alt="Лого"></li>
-                  <li class="menu__item">Titiland</li>
-                  <li class="menu__item">ZOOM LOUPE</li>
-                  <li class="menu__item">miticoin</li>
-               </ul>
-            </div>
-         </div>
-      </header>
+   </header>
+   <div class="wrapper">
       <main class="main">
          <div class="main__container">
-            <div class="main__content">
-               <div class="main__welcome">
+            <div class="welcome">
+               <video loop autoplay muted preload="auto">
+                  <source src="video/world.mp4" type="video/mp4">
+               </video>
+               <div class="arrow-content">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+               <img class="eart-bg" src="img/earth_bg.png" alt="">
+               <div class="blur"></div>
+               <div class="welcome__wel">
                   Добро пожаловать в метасеть
                </div>
-               <div class="main__name">
+               <div class="welcome__title">
                   Titimiti
                </div>
-               <div class="main__info">
+               <div class="welcome__text">
                   Нет каждому по солнцу. Но денег хватит на всех.
                </div>
-               <div class="main__discord">
+               <div class="welcome__btn">
                   <img src="img/discord.svg" alt="Дискорд">
                   <span>Вступить в cообщество</span>
                </div>
             </div>
-            <div class="main__about">
-               <div class="main__about-item">
-                  <div class="main__about-name">
+
+            <div class="about">
+               <div class="about__block">
+                  <div class="about__title">
                      О проекте
                   </div>
-                  <div class="main__about-line"></div>
-                  <div class="main__about-info">
-                     Равным образом, дальнейшее развитие различных форм деятельности однозначно фиксирует необходимость
-                     прогресса профессионального сообщества.
-                  </div>
-                  <div class="main__about-logo">
-                     <img src="img/polygon.png" alt="Полигон">
+                  <div class="about__line"></div>
+                  <div class="about__info">
+                     TitiMiti – метасеть, объединяет De-fi, Game-fi и Social-fi столпы в единую экономическую систему
+                     будущего. Которая впервые в истории человечества превращает азарт и жадность в цифровое золото,
+                     работающее на благо всего сообщества.
                   </div>
                </div>
-               <div class="main__about-item">
-                  <div class="main__about-name">
+               <div class="about__block">
+                  <div class="about__title">
                      Наша миссия
                   </div>
-                  <div class="main__about-line"></div>
-                  <div class="main__about-info">
-                     Равным образом, новая модель организационной деятельности способствует повышению качества системы
-                     обучения кадров, соответствующей насущным потребностям. <br>
-                     Равным образом, дальнейшее развитие различных форм деятельности однозначно фиксирует необходимость
-                     прогресса профессионального сообщества.
+                  <div class="about__line"></div>
+                  <div class="about__info">
+                     Мы — группа проффесиональных трейдеров и программистов объединённых высшим разумом в "союз игровых
+                     сообществ".<br>
+                     Наша миссия — создание революционной геймефицированной социально экономической машины, идущий на
+                     смену современным государствам.
                   </div>
                </div>
             </div>
-            <div class="main__titland">
-               <div class="main__slaider slaider">
-                  <div class="slaider__image">
+
+            <div class="titiland">
+               <div class="titiland__slaider">
+                  <div class="titiland__slaider-body">
                      <div class="back"></div>
-                     <div class="slaider__col-top">
+                     <div class="titiland__col-top">
                         <img src="img/col-top.png" alt="Вверхняя плита">
                      </div>
-                     <div class="slaider__photos">
-                        <div class="slaider__arr-left arr-prev arr">
+                     <div class="titiland__photos">
+                        <div class="titiland__arr-left">
                            <img src="img/arr-right.png" alt="">
                         </div>
                         <div class="swiper">
@@ -111,43 +113,372 @@
                               <div class="swiper-slide">
                                  <img src="img/photo-2.png" alt="">
                               </div>
+                              <div class="swiper-slide">
+                                 <img src="img/AU.png" alt="">
+                              </div>
                            </div>
                         </div>
-                        <div class="slaider__arr-right arr-next arr">
+                        <div class="titiland__arr-right">
                            <img src="img/arr-right.png" alt="">
                         </div>
                      </div>
-                     <div class="slaider__col-down">
+                     <div class="titiland__col-down">
                         <img src="img/col-down.png" alt="Нижняя плита">
                      </div>
                   </div>
                </div>
-               <div class="main__titiland-content">
-                  <div class="main__titiland-name">
+
+               <div class="titiland__content">
+                  <div class="titiland__name">
                      Titiland
                   </div>
-                  <div class="main__titiland-text">
+                  <div class="titiland__text">
                      Цифровая копия земли – токенизированная планета. Важнейший актив метасети TitiMiti. Даёт своим
                      держателям право на доход с монетизации всего проекта. Кто завладеет NFT TitiLand, тот войдёт в
                      аристократию 21 века.
                   </div>
-                  <div class="main__titiland-more">
+                  <div class="titiland__more">
                      Подробнее
                   </div>
                </div>
 
             </div>
 
+            <div class="zoomloop">
+               <div class="zoomloop__back"></div>
+               <div class="zoomloop__back"></div>
+               <div class="zoomloop__content">
+                  <div class="zoomloop__opentxt">
+                     Открой новый мир
+                  </div>
+                  <div class="zoomloop__name">
+                     ZOOM LOUPE
+                  </div>
+                  <div class="zoomloop__text">
+                     AR вселенная – увлекательная игра и инструмент с помощью которого ты будешь находить и собирать
+                     разбросанные вокруг тебя настоящие деньги, а так же иные ценности!<br>
+                     Место приключений, квестов, общения с другими игроками, заработка. Место - где живут причудливые
+                     существа с искусственным интеллектом, новая форма разумной жизни.
+                  </div>
+                  <div class="zoomloop__play-btn">
+                     Начать играть
+                  </div>
+                  <!-- <img src="img/case.png" alt="Сундук"> -->
+               </div>
+               <div class="zoomloop__phone">
+                  <div class="phone-base">
+                     <img src="img/phone_down.svg" alt="Подставка телефона">
+                     <img src="img/Iphone.svg" alt="Телефон">
+                  </div>
+               </div>
+            </div>
+
+            <div class="miticoin">
+               <div class="miticoin__video">
+                  <div class="miticoin__main">
+                     <video src="video/coin.mp4" loop autoplay muted preload="auto"></video>
+                     <img src="img/col-down.png" alt="">
+                  </div>
+                  <img class="blur" src="img/mitcoin_blur.png" alt="">
+                  <img class="blur" src="img/mitcoin_center_blur.png" alt="">
+               </div>
+               <div class="miticoin__content">
+                  <div class="miticoin__name">
+                     Miticoin
+                  </div>
+                  <div class="miticoin__text">
+                     Расчётный инструмент метасети TitiMiti. Уникальная криптовалюта с механизмом
+                     стабильно-постоянного
+                     роста курса. Экономика проекта гарантирует, что цена MitiCoin никогда не будет ниже его
+                     бесконечно
+                     растущей капитализации.
+                  </div>
+               </div>
+            </div>
+
+            <div class="roadmap">
+               <div class="rm">
+                  <div class="rm__line line-1">
+                  </div>
+                  <div class="rm__line line-2">
+                  </div>
+                  <div class="rm__line line-3">
+
+                     <div class="rm_point point-1 p-big">
+                        <div class="p-text">
+                           <p class="p-title">Декабрь <span> 2021</span></p>
+                           <p class="p-info">Формирование идеи</p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-2">
+                        <div class="p-text">
+                           <p class="p-info">Формирование высокопрофессиональной команды</p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-3">
+                        <div class="p-text">
+                           <p class="p-info">Первые концепты и выбор художественного направления</p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-4">
+                        <div class="p-text">
+                           <p class="p-info">Техническая документация</p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-5 p-big">
+                        <div class="p-text">
+                           <p class="p-title">ФЕВРАЛЬ <span> 2021</span></p>
+                           <p class="p-info">Прототипирование</p>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="rm__elipse elipse-1">
+                  </div>
+                  <div class="rm__line line-4">
+
+                     <div class="rm_point point-6 p-big">
+                        <div class="p-text">
+                           <p class="p-title">MAЙ <span> 2022</span></p>
+                           <p class="p-info">Дизайн документ</p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-7">
+                        <div class="p-text">
+                           <p class="p-info">Токеномика </p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-8 p-big">
+                        <div class="p-text">
+                           <p class="p-title">Август <span> 2022</span></p>
+                           <p class="p-info">Whitepaper</p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-9 p-big">
+                        <div class="p-text">
+                           <p class="p-title">СЕНТЯБРЬ <span> 2022</span></p>
+                           <p class="p-info">Запуск сайта Titimiti и Zoom Loupe</p>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="rm__elipse elipse-2">
+
+                     <div class="rm_point point-10">
+                        <div class="p-text">
+                           <p class="p-info">Запуск социальных сетей</p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-11 p-inactive">
+                        <div class="p-text">
+                           <p class="p-info">Zoom Loupe Открытый бета-тест</p>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="rm__line line-5">
+
+                     <div class="rm_point point-12 p-inactive">
+                        <div class="p-text">
+                           <p class="p-info">Первый взгляд на NFT </p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-13 p-inactive">
+                        <div class="p-text">
+                           <p class="p-info">Miticoin release</p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-14 p-big p-inactive">
+                        <div class="p-text">
+                           <p class="p-title">Декабрь <span> 2022</span></p>
+                           <p class="p-info">Аудит смартконтрактов</p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-15 p-big p-inactive">
+                        <div class="p-text">
+                           <p class="p-title">Январь <span> 2023</span></p>
+                           <p class="p-info">Запуск сайта Titiland </p>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="rm__elipse elipse-3">
+
+                     <div class="rm_point point-16 p-inactive">
+                        <div class="p-text">
+                           <p class="p-info">Продажи NFTW</p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-17 p-inactive">
+                        <div class="p-text">
+                           <p class="p-info">Zoom Loupe Beta release</p>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="rm__line line-6">
+
+                     <div class="rm_point point-18 p-inactive">
+                        <div class="p-text">
+                           <p class="p-info">NFTA drops</p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-19 p-inactive">
+                        <div class="p-text">
+                           <p class="p-info">Запуск маркетплейса</p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-20 p-inactive">
+                        <div class="p-text">
+                           <p class="p-info">Формирование Landlords</p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-21 p-big p-inactive">
+                        <div class="p-text">
+                           <p class="p-title">Май <span> 2023</span></p>
+                           <p class="p-info">Продажи NFTO</p>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="rm__elipse elipse-4">
+
+                     <div class="rm_point point-22 p-inactive">
+                        <div class="p-text">
+                           <p class="p-info">Запуск майнинга</p>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="rm__line line-7">
+
+                     <div class="rm_point point-23 p-inactive">
+                        <div class="p-text">
+                           <p class="p-info">Запуск стейкинга </p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-24 p-inactive">
+                        <div class="p-text">
+                           <p class="p-info">Создание инфраструктуры земель Titiland</p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-25 p-big p-inactive">
+                        <div class="p-text">
+                           <p class="p-title">АВГУСТ <span> 2023</span></p>
+                           <p class="p-info">Формирование Союзов, Стран и Орденов</p>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="rm__elipse elipse-5">
+
+                     <div class="rm_point point-26 p-inactive">
+                        <div class="p-text">
+                           <p class="p-info">Первое децентрализованное голосование </p>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="rm__line line-8">
+
+                     <div class="rm_point point-27 p-inactive">
+                        <div class="p-text">
+                           <p class="p-info">Внедрение NFT паспорт системы</p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-28 p-inactive">
+                        <div class="p-text">
+                           <p class="p-info">Социальная сеть Titimiti</p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-29 p-inactive">
+                        <div class="p-text">
+                           <p class="p-info">Titimiti multichain </p>
+                        </div>
+                     </div>
+
+                     <div class="rm_point point-30 p-inactive">
+                        <div class="p-text">
+                           <p class="p-title">2027</p>
+                           <p class="p-info">Google takeover</p>
+                        </div>
+                     </div>
+
+                     <p class="text-moon">На луну!</p>
+
+                  </div>
+                  <div class="rm__arr">
+                  </div>
+               </div>
+            </div>
+
          </div>
       </main>
+
+
       <footer class="footer">
          <div class="footer__container">
-            Футер
+            <div class="footer__logo">
+               <img src="img/Logo.svg" alt="">
+            </div>
+            <div class="footer__title">
+               Titimiti
+            </div>
+            <div class="footer__share">
+               <div class="footer__share--item"> <img src="img/twitter.svg" alt="Твиттер"></div>
+               <div class="footer__share--item"><img src="img/tg.svg" alt="Телеграм"></div>
+               <div class="footer__share--item"> <img src="img/insta.svg" alt="Инстаграм"></div>
+               <div class="footer__share--item"><img src="img/ds.svg" alt="Дискорд"></div>
+            </div>
+            <div class="footer__email">
+               info@titimiti.com
+            </div>
+            <div class="footer__power">
+               Powered by
+               <img src="img/polygon.svg" alt="">
+            </div>
+            <div class="footer__policy">
+               <a href="">Privacy policy</a> and <a href="">Terms of use</a> Copyright © 2010-2022 DeSo. All rights
+               reserved.
+            </div>
          </div>
       </footer>
+
+      <div class="popup404">
+         <div class="popup404__body">
+            <div class="popup404__content">
+               <img src="img/UFO404.svg" alt="">
+               <h1 class="__name">404</h1>
+               <p>Страница еще в разработке</p>
+               <div class="popup404__close-btn">
+                  Закрыть
+               </div>
+            </div>
+         </div>
+      </div>//Проявляется при загрузке страницы
+
    </div>
 </body>
-<script src="js/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 
 </html>
